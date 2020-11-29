@@ -103,4 +103,65 @@
             color: $color-primary;
         }
     }
+
+    @include respond(phone)
+    { 
+        &__content
+        {
+            width: 100%;
+            display: block;
+            overflow: hidden;
+        }
+    
+        &__left
+        {
+            width: 100%;
+            display: block;
+            @include clearfix;
+
+        }
+    
+        &__right
+        {
+            width: 100%;
+            display: block;
+            padding: 1rem 3rem;
+        }
+    
+        &__img
+        {
+            display: inline;
+            width: 50%;
+            float: left;
+            height: 25rem;
+        }
+    
+        &__text
+        {
+            font-size: 1.4rem;
+            margin-bottom: 2rem;
+    
+            -moz-column-count: 1;
+            -moz-column-gap: none;
+            -moz-column-rule: none;
+    
+            -ms-column-count: 1;
+            -ms-column-gap: none;
+            -ms-column-rule: none;
+    
+            -webkit-column-count: 1;
+            -webkit-column-gap: none;
+            -webkit-column-rule: none;
+    
+            
+            column-count: 1;
+            column-gap: none;
+            column-rule: none;
+    
+            -moz-hyphens: auto;
+            -ms-hyphens: auto;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }    
+    }
 }
